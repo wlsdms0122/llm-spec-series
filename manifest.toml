@@ -1,0 +1,23 @@
+# The specification is `open-package spec`
+
+[open-package]
+version = "1.0.0"
+
+[package]
+name = "spec-series"
+version = "0.1.0"
+description = "Keeps what a project decides as series of numbered specs, and decides what needs no judgement"
+requires = ["python3", "git"]
+
+[command]
+init = "python3 source/main.py init"
+draft = "python3 source/main.py draft"
+accept = "python3 source/main.py accept"
+release = "python3 source/main.py release"
+history = "python3 source/main.py history"
+list = "python3 source/main.py list"
+lint = "python3 source/main.py lint"
+impact = "python3 source/main.py impact"
+pack = "python3 source/main.py pack"
+record = "python3 source/main.py record"
+test = "python3 -m unittest discover -s test"
